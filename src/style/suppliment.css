@@ -1,0 +1,106 @@
+.suppliment-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #1e3a8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.main-section {
+  padding: 2rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.supplement-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.supplement-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.supplement-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+
+.card-buttons button {
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card-buttons button:hover {
+  background-color: #2563eb;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-links {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

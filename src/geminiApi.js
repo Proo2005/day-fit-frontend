@@ -1,0 +1,28 @@
+// src/geminiApi.js
+
+const GEMINI_API_KEY = "AIzaSyCCq8N4AIgZxtlFlo86NJQOCmP3t75j48w"; // Replace this with your real key
+export async function sendToGemini(userMessage) {
+  const response = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        contents: [
+          {
+            parts: [
+              {
+                text: userMessage,
+              },
+            ],
+          },
+        ],
+      }),
+    }
+  );
+
+  const data = await response.json();
+  return data?.candidates?.[0]?.content?.parts?.[0]?.text || "No response";
+}
