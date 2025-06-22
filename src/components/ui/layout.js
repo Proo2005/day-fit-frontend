@@ -29,7 +29,6 @@ export default function Layout() {
           <li className="nav-item"><Link to="/ai" className="nav-link">Ai</Link></li>
           <li className="nav-item"><Link to="/exercise" className="nav-link">Exercise</Link></li>
           <li className="nav-item"><Link to="/suppliment" className="nav-link">Suppliment</Link></li>
-          <li className="nav-item"><Link to="/app" className="nav-link">App</Link></li>
           <li className="nav-item"><Link to="/community" className="nav-link">Community</Link></li>
 
           <li className="nav-item"><Link to="/premimium" className="nav-link">Premium</Link></li>

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import  Layout from "./components/ui/layout";
+import Layout from "./components/ui/layout";
 import DayFitLandingPage from "./pages/start";
 import Login from "./pages/login";
 import Register from "./pages/Register";
@@ -18,10 +18,12 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<DayFitLandingPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<DayFitLandingPage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+
+
           <Route path="/home" element={<MyHomePage />} />
           <Route path="/exercise" element={<ExercisePage />} />
           <Route path="/Ai" element={<AssistantPage />} />

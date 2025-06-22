@@ -5,15 +5,7 @@ import "../style/premimium.css";
 export default function PremiumPage() {
   return (
     <div className="premium-page">
-      <header className="navbar">
-        <h1 className="logo">DAYFIT</h1>
-        <nav className="nav-links">
-          <Link to="/home">Home</Link>
-          <Link to="/exercise">Exercise</Link>
-          <Link to="/suppliment">Supplements</Link>
-          <Link to="/payment" className="active">Premium</Link>
-        </nav>
-      </header>
+     
 
       <section className="promo-section">
         <p className="promo-text">Plan 30 days of delicious meals for <Link to="/trial"><b>Start Free Trial</b></Link></p>
